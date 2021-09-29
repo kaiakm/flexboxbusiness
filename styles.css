@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Monda', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    -webkit-text-size-adjust: 100%;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h1 {
+    color: hotpink;
+    font-size: 20rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+main {
+    width: 100%;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+    top: 0;
+    height: 90px;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    color: hotpink;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+nav ul {
+    word-spacing: 1.25rem;
+}
+
+nav li {
+    display: inline;
+    text-transform: uppercase;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+/* Header */
+
+header {
+    margin-top: 90px;
+    position: relative;
+    display: flex;
+    height: 800px;
+    background: url(./images/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+}
+
+header h2 {
+    color: white;
+}
+
+/* Mission */
+
+.mission {
+    display: flex;
+    background-color: black;
+    height: 400px;
+    color: white;
+    flex-flow: column wrap;
+    justify-content: center;
+    line-height: 6rem;
+}
+
+.mission h3 {
+    color: hotpink;
+}
+
+@media only screen and (max-width: 1350px) {
+    .mission {
+        height: auto;
+        line-height: 4rem;
+        padding: 20px;
+    }
+
+    .mission p {
+        line-height: 2rem;
+    }
+}
+
+/* About */
+
+.about {
+    margin: 60px auto;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 30px;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.about-img img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    filter: grayscale(80%);
+}
+
+@media only screen and (max-width: 1630px) {
+    .about {
+        height: auto;
+        line-height: 1.6rem;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .about-img img {
+        margin: auto;
+        justify-content: center;
+    }
+}
+
+/* Team */
+
+.team {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: 60px auto;
+}
+
+.team h2,
+.team p {
+    color: white;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-list figure {
+    width: 350px;
+}
+
+.team-list img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1400px) {
+    .team {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .team-list {
+        flex-direction: row wrap;
+    }
+
+    .team-list figure {
+        margin: 30px auto;
+    }
+}
+
+/* Contact */
+
+.contact {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact p {
+    margin-top: 30px;
+    color: hotpink;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
