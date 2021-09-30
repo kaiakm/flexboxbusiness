@@ -4,6 +4,7 @@
     font-size: 16px;
     text-align: center;
     -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 img {
@@ -16,18 +17,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
 h6 {
     font-family: 'Julius Sans One', sans-serif;
+    margin: 0;
 }
 
 h1 {
@@ -41,10 +33,6 @@ h2 {
 
 h3 {
     font-size: 2.5rem;
-}
-
-main {
-    width: 100%;
 }
 
 /* Navigation */
@@ -90,6 +78,7 @@ a:hover {
 
 header {
     margin-top: 90px;
+    width: 100%;
     position: relative;
     display: flex;
     height: 800px;
@@ -99,23 +88,29 @@ header {
     background-size: cover;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
+    flex-direction: column;
 }
 
 header h2 {
     color: white;
 }
 
+@media only screen and (max-width: 430px) {
+    header h2 {
+        font-size: 2rem;
+    }
+}
+
 /* Mission */
 
 .mission {
     display: flex;
+    margin: 0;
     background-color: black;
     height: 400px;
     color: white;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
-    line-height: 6rem;
 }
 
 .mission h3 {
