@@ -155,6 +155,7 @@ header h2 {
     height: 300px;
     object-fit: cover;
     overflow: hidden;
+    margin: 0 30px;
     filter: grayscale(80%);
 }
 
@@ -167,7 +168,7 @@ header h2 {
     }
 
     .about-img img {
-        margin: auto;
+        margin: 30px;
         justify-content: center;
     }
 }
@@ -197,6 +198,7 @@ header h2 {
 
 .team-list figure {
     width: 350px;
+    margin: 0 40px;
 }
 
 .team-list img {
